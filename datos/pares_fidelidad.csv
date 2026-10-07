@@ -1,0 +1,7 @@
+id,criterio_fuente,abstraccion,etiqueta
+F01,C04,Un comodato de equipos condicionado a su uso exclusivo puede equivaler a una cláusula de exclusividad.,fiel
+F02,C04,Todo contrato de comodato de equipos constituye una práctica monopólica relativa.,generalizacion_no_sostenida
+F03,C13,Un incremento del IHH superior a 75 puntos hace ilegal una concentración.,generalizacion_no_sostenida
+F04,C12,El mercado geográfico de todos los productos de consumo es local.,generalizacion_no_sostenida
+F05,C12,"En el comercio minorista de medicamentos, el mercado geográfico suele ser local por la poca disposición de los consumidores a desplazarse.",fiel
+F06,C21,"Si la multa no está motivada, debe anularse toda la resolución, incluida la acreditación de la conducta.",generalizacion_no_sostenida

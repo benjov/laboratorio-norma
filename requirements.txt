@@ -1,0 +1,11 @@
+streamlit~=1.45.0  # versión fija: las más recientes retiran parámetros que usa la app
+anthropic>=0.40
+pydantic>=2.6
+pdfplumber>=0.11
+pypdfium2>=4.0
+pandas>=2.0
+numpy>=1.26
+scikit-learn>=1.4
+# Opcional: embeddings reales en la estación de deduplicación. Pesa cerca de 1 GB con torch;
+# sin esta línea la app usa TF-IDF de caracteres, que corre en cualquier lado.
+# sentence-transformers>=3.0

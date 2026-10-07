@@ -1,0 +1,98 @@
+[
+  {
+    "id": "T01",
+    "ruta_tema": "Procedimiento > Competencia de la autoridad"
+  },
+  {
+    "id": "T02",
+    "ruta_tema": "Procedimiento > Vía de impugnación"
+  },
+  {
+    "id": "T03",
+    "ruta_tema": "Procedimiento > Estándar de control judicial"
+  },
+  {
+    "id": "T04",
+    "ruta_tema": "Procedimiento > Prueba > Prueba indiciaria"
+  },
+  {
+    "id": "T05",
+    "ruta_tema": "Procedimiento > Prueba > Carga de la prueba"
+  },
+  {
+    "id": "T06",
+    "ruta_tema": "Análisis económico > Mercado relevante > Definición"
+  },
+  {
+    "id": "T07",
+    "ruta_tema": "Análisis económico > Mercado relevante > Dimensión geográfica"
+  },
+  {
+    "id": "T08",
+    "ruta_tema": "Análisis económico > Poder sustancial"
+  },
+  {
+    "id": "T09",
+    "ruta_tema": "Análisis económico > Barreras a la entrada"
+  },
+  {
+    "id": "T10",
+    "ruta_tema": "Análisis económico > Índices de concentración"
+  },
+  {
+    "id": "T11",
+    "ruta_tema": "Prácticas monopólicas relativas > Elementos > Objeto o efecto"
+  },
+  {
+    "id": "T12",
+    "ruta_tema": "Prácticas monopólicas relativas > Conductas > Exclusividad"
+  },
+  {
+    "id": "T13",
+    "ruta_tema": "Prácticas monopólicas relativas > Conductas > Comodato y uso de activos"
+  },
+  {
+    "id": "T14",
+    "ruta_tema": "Prácticas monopólicas relativas > Cierre de mercado"
+  },
+  {
+    "id": "T15",
+    "ruta_tema": "Prácticas monopólicas relativas > Ganancias en eficiencia"
+  },
+  {
+    "id": "T16",
+    "ruta_tema": "Prácticas monopólicas absolutas > Acuerdos entre competidores"
+  },
+  {
+    "id": "T17",
+    "ruta_tema": "Concentraciones > Objeto del análisis"
+  },
+  {
+    "id": "T18",
+    "ruta_tema": "Concentraciones > Condiciones > Suficiencia y proporcionalidad"
+  },
+  {
+    "id": "T19",
+    "ruta_tema": "Concentraciones > Condiciones > Remedios estructurales"
+  },
+  {
+    "id": "T20",
+    "ruta_tema": "Concentraciones > Notificación > Umbrales"
+  },
+  {
+    "id": "T21",
+    "ruta_tema": "Sanciones > Individualización de la multa"
+  },
+  {
+    "id": "T22",
+    "ruta_tema": "Sanciones > Motivación de la multa"
+  },
+  {
+    "id": "T23",
+    "ruta_tema": "Amparo > Efectos de la concesión"
+  },
+  {
+    "id": "T24",
+    "ruta_tema": "Derechos > Propiedad y competencia"
+  }
+]
