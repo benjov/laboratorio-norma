@@ -1,5 +1,5 @@
 """Piezas de interfaz compartidas por todas las estaciones."""
-import html, inspect
+import html, inspect, sys
 import streamlit as st
 import anthropic
 from .claude import SinKey, SinSaldo
@@ -14,6 +14,12 @@ def limite_sesion():
 
 def configurar(titulo, icono="⚖️"):
     st.set_page_config(page_title=f"{titulo} · Laboratorio Norma+", page_icon=icono, layout="wide")
+    if sys.version_info >= (3, 14):
+        # Streamlit 1.45 exige Altair 5, que no corre en Python 3.14. En Streamlit Cloud la versión
+        # se elige al desplegar: hay que borrar la app y volver a desplegarla con Python 3.12.
+        st.error(f"Esta app necesita Python 3.11 o 3.12 y el servidor tiene {sys.version.split()[0]}. "
+                 "Avisa al instructor: debe volver a desplegarla con Python 3.12.")
+        st.stop()
     st.session_state.setdefault("sesion", {"gasto": 0.0, "registro": []})
     st.session_state.setdefault("extracciones", {})
     with st.sidebar:

@@ -36,7 +36,7 @@ Se edita siempre en el repositorio de materiales y se vuelve a correr `git subtr
 1. Publica la app en su repositorio con `git subtree push` (arriba). Puede ser privado.
 2. Entra a share.streamlit.io con la cuenta de GitHub y elige **Create app** › desde un repositorio existente.
 3. Selecciona el repositorio, la rama y `app.py` como archivo principal.
-4. En **Advanced settings**, elige Python 3.11 o 3.12 y pega en **Secrets** el contenido de `.streamlit/secrets.toml.ejemplo` con una clave de instructor propia.
+4. En **Advanced settings**, elige **Python 3.12** (obligatorio: con 3.13 o 3.14 la app falla, porque Streamlit 1.45 usa Altair 5. La versión no se puede cambiar después; si quedó mal, hay que borrar la app y volver a desplegarla) y pega en **Secrets** el contenido de `.streamlit/secrets.toml.ejemplo` con una clave de instructor propia.
 5. Despliega. La primera instalación tarda unos minutos.
 6. Una app de repositorio privado nace privada. En **Share**, hazla pública (cualquiera con el enlace) o invita por correo a los 13 alumnos. Pública es más simple: sin key del curso no se gasta nada.
 
