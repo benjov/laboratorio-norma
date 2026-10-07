@@ -20,12 +20,14 @@ La caché es **compartida**: si alguien ya hizo exactamente la misma llamada (mi
 
 ## Repositorio de la app
 
-La app vive en el repositorio de materiales (`01_diplomado/laboratorio_app/`), que es privado porque tiene los decks de VC. Streamlit Cloud se conecta a un **repositorio aparte que solo tiene la app**, con `app.py` en la raíz. Se publica desde la raíz del repositorio de materiales:
+La app vive en el repositorio de materiales (`01_diplomado/laboratorio_app/`), que es privado porque tiene los decks de VC. Streamlit Cloud se conecta a un **repositorio público aparte que solo tiene la app** (código y datos ficticios, sin secretos), con `app.py` en la raíz. Se publica desde la raíz del repositorio de materiales:
 
 ```bash
 git remote add app git@github.com:<usuario>/laboratorio-norma.git   # solo la primera vez
 git subtree push --prefix 01_diplomado/laboratorio_app app main
 ```
+
+`git subtree` no viene en el git de Apple: instala el de Homebrew (`brew install git`) y abre una terminal nueva.
 
 Se edita siempre en el repositorio de materiales y se vuelve a correr `git subtree push`; Streamlit redespliega solo.
 
