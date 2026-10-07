@@ -45,5 +45,7 @@ with st.expander("Para el instructor"):
         st.write(f"Hay {n} respuestas en la caché de esta instancia.")
         st.download_button("Descargar caché como respaldo", open("/tmp/cache_laboratorio.json", "rb"), file_name="cache.json")
         st.caption(f"Para usarla como respaldo, reemplaza `{RESPALDO.relative_to(RESPALDO.parents[2])}` en el repositorio y vuelve a desplegar.")
+    elif clave and not esperada:
+        st.error("El servidor no tiene `CLAVE_INSTRUCTOR` en Secrets. Agrégala en share.streamlit.io › ⋮ › Settings › Secrets.")
     elif clave:
         st.error("Clave incorrecta.")
