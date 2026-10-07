@@ -18,14 +18,25 @@ Modelo `claude-haiku-4-5`. Un recorrido completo cuesta alrededor de USD 0.10 a 
 
 La caché es **compartida**: si alguien ya hizo exactamente la misma llamada (mismo prompt y mismo texto), la respuesta sale de la caché y no se paga. Sin key, el alumno ve solo lo que ya está en caché.
 
+## Repositorio de la app
+
+La app vive en el repositorio de materiales (`01_diplomado/laboratorio_app/`), que es privado porque tiene los decks de VC. Streamlit Cloud se conecta a un **repositorio aparte que solo tiene la app**, con `app.py` en la raíz. Se publica desde la raíz del repositorio de materiales:
+
+```bash
+git remote add app git@github.com:<usuario>/laboratorio-norma.git   # solo la primera vez
+git subtree push --prefix 01_diplomado/laboratorio_app app main
+```
+
+Se edita siempre en el repositorio de materiales y se vuelve a correr `git subtree push`; Streamlit redespliega solo.
+
 ## Desplegar en Streamlit Community Cloud
 
-1. Sube esta carpeta a un repositorio de GitHub (puede ser privado). `app.py` debe quedar en la raíz del repositorio o indica su ruta al crear la app.
+1. Publica la app en su repositorio con `git subtree push` (arriba). Puede ser privado.
 2. Entra a share.streamlit.io con la cuenta de GitHub y elige **Create app** › desde un repositorio existente.
 3. Selecciona el repositorio, la rama y `app.py` como archivo principal.
 4. En **Advanced settings**, elige Python 3.11 o 3.12 y pega en **Secrets** el contenido de `.streamlit/secrets.toml.ejemplo` con una clave de instructor propia.
 5. Despliega. La primera instalación tarda unos minutos.
-6. Revisa en la configuración de compartir quién puede abrir la app. Comparte el enlace con los alumnos.
+6. Una app de repositorio privado nace privada. En **Share**, hazla pública (cualquiera con el enlace) o invita por correo a los 13 alumnos. Pública es más simple: sin key del curso no se gasta nada.
 
 La app no guarda las keys en disco: viven solo en la sesión del navegador de cada alumno. Aun así, pasan por el servidor de la app; por eso se usan keys del curso, con tope de gasto, que se revocan al terminar.
 
