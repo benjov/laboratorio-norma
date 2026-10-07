@@ -53,9 +53,9 @@ with t2:
                 "Ajusta los supuestos y mira cómo cambia el costo.")
     c1, c2 = st.columns(2)
     with c1:
-        tokens_pagina = st.number_input("Tokens de entrada por página (supuesto)", 200, 3000, 700, 50,
+        tokens_pagina = st.number_input("Tokens de entrada por página (supuesto)", 200, 15000, 700, 50,
                                         help="Una página de texto jurídico en español ronda varios cientos de tokens; incluye las instrucciones que se repiten.")
-        salida_doc = st.number_input("Tokens de salida por resolución (supuesto)", 100, 20000, 1500, 100)
+        salida_doc = st.number_input("Tokens de salida por resolución (supuesto)", 100, 500000, 1500, 100)
         pasadas = st.slider("Llamadas al modelo por página (extracción, validación, gate…)", 1, 6, 1)
     with c2:
         p_in = st.number_input("Precio de entrada (USD por millón de tokens)", 0.1, 100.0, float(PRECIOS[MODELO][0]), 0.1)
