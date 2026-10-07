@@ -44,7 +44,7 @@ La app no guarda las keys en disco: viven solo en la sesión del navegador de ca
 
 ## Respaldo para quien no tenga key
 
-1. Después de la corrida de ensayo, abre **Inicio › Para el instructor**, escribe la clave de instructor y descarga la caché.
+1. Después de la corrida de ensayo, abre el desplegable **Para el instructor** al final de la portada (en el menú se llama «app»), escribe la clave de instructor y descarga la caché.
 2. Reemplaza `datos/respaldo/cache.json` en el repositorio con ese archivo y vuelve a desplegar.
 
 Con eso, cualquier alumno ve los resultados de la corrida de ensayo aunque su key falle. La caché en memoria se pierde cuando la app se reinicia o se duerme por inactividad; el respaldo no.
